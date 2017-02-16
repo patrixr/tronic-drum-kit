@@ -1,7 +1,6 @@
 # Tronic-drum-kit 
 
------ 
-
+-----  
 ## About 
 This project is fro Electronic Museum 3 at Clear Water Bay Film Studios Hong Kong 2017. 
 
@@ -28,4 +27,4 @@ _IDEs_
 
 ## Result
 
-![alt tag](https://raw.githubusercontent.com/zipatrick/tronic-drum-kit/master/medias/2017-02-11-event.png) 
+<img src="https://raw.githubusercontent.com/zipatrick/tronic-drum-kit/master/medias/2017-02-11-event.png" width="300"> 
