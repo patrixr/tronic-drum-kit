@@ -1,4 +1,4 @@
-# tronic-drum-kit 
+# Tronic-drum-kit 
 
 ----- 
 
@@ -23,3 +23,9 @@ _IDEs_
 1. [Arduino](https://www.arduino.cc/en/Main/Software)
 1. [Visual Studio](http://playground.arduino.cc/Code/VisualStudio)
 1. [Eclipse](http://playground.arduino.cc/Code/Eclipse)
+
+-----
+
+## Result
+
+![alt tag](https://raw.githubusercontent.com/zipatrick/tronic-drum-kit/master/medias/2017-02-11-event.png) 
