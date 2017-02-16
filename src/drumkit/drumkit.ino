@@ -155,11 +155,10 @@
 
 #include <Adafruit_NeoPixel.h>
 
-#define SOUND_PIN 2
+#define SOUND_PIN 12
 #define LED_PIN 13
 #define LED_COUNT 60 * 5
 #define STRIP_COUNT 1
-#define START_FROM_MIDDLE 1
 #define ANIMATION_STRIP_LEN 20
 
 Adafruit_NeoPixel strips[STRIP_COUNT] = {
@@ -229,44 +228,29 @@ void tick(unsigned long color)
   //
   for (int i = 0; i < STRIP_COUNT; i++)
   {
-    if (START_FROM_MIDDLE) {
-      for (int j = LED_COUNT - 1; j >= middle; j--)
-      {
-        if (lights[j - step] == true) {
-          lights[j] = true;
-          lights[j - step] = false;
-        }
-        if (lights[j]) {
-          strips[i].setPixelColor(j, r, g, b);
-        } else {
-          strips[i].setPixelColor(j, 0, 0, 0);
-        }
+    for (int j = LED_COUNT - 1; j >= middle; j--)
+    {
+      if (lights[j - step] == true) {
+        lights[j] = true;
+        lights[j - step] = false;
       }
+      if (lights[j]) {
+        strips[i].setPixelColor(j, r, g, b);
+      } else {
+        strips[i].setPixelColor(j, 0, 0, 0);
+      }
+    }
 
-      for (int j = 0; j < middle; j++)
-      {
-        if (lights[j + step] == true) {
-          lights[j] = true;
-          lights[j + step] = false;
-        }
-        if (lights[j]) {
-          strips[i].setPixelColor(j, r, g, b);
-        } else {
-          strips[i].setPixelColor(j, 0, 0, 0);
-        }
+    for (int j = 0; j < middle; j++)
+    {
+      if (lights[j + step] == true) {
+        lights[j] = true;
+        lights[j + step] = false;
       }
-    } else {
-      for (int j = LED_COUNT - 1; j > 0; j--)
-      {
-        if (lights[j - step] == true) {
-          lights[j] = true;
-          lights[j - step] = false;
-        }
-        if (lights[j]) {
-          strips[i].setPixelColor(j, r, g, b);
-        } else {
-          strips[i].setPixelColor(j, 0, 0, 0);
-        }
+      if (lights[j]) {
+        strips[i].setPixelColor(j, r, g, b);
+      } else {
+        strips[i].setPixelColor(j, 0, 0, 0);
       }
     }
     strips[i].show();
@@ -292,10 +276,7 @@ void pulse(unsigned long color)
     strips[i].show();
   }
 
-  int start = 0;
-  if (START_FROM_MIDDLE) {
-    start = LED_COUNT / 2 - ANIMATION_STRIP_LEN / 2;
-  }
+  int start = LED_COUNT / 2 - ANIMATION_STRIP_LEN / 2;
 
   for (int i = 0; i < ANIMATION_STRIP_LEN; i++) {
     lights[start + i] = true;
