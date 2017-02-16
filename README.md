@@ -28,3 +28,4 @@ _IDEs_
 ## Result
 
 <img src="https://raw.githubusercontent.com/zipatrick/tronic-drum-kit/master/medias/2017-02-11-event.png" width="300"> 
+<img src="https://raw.githubusercontent.com/zipatrick/tronic-drum-kit/master/medias/demo.gif" width="400"> 
