@@ -7,6 +7,8 @@ This project is fro Electronic Museum 3 at Clear Water Bay Film Studios Hong Kon
 
 Here you’ll find the code for the project which uses Arduino hooked into a sound sensor and some addressable LED light model WS2812.
 
+![[TRONICic Drums schematic](https://github.com/zipatrick/tronic-drum-kitmaster/images/tronic-schematic.png)
+
 ----- 
 
 ## Resources 
