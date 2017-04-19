@@ -9,10 +9,9 @@ Here you’ll find the code for the project which uses Arduino hooked into a sou
 -----
 ## Drawings
 
-[Electronic circuit diagram](https://circuits.io/circuits/3963655-tronic)
-![[TRONICic Drums schematic](https://github.com/zipatrick/tronic-drum-kit/blob/master/schematics/tronic-schematic.png)
-
-<iframe frameborder='0' height='448' marginheight='0' marginwidth='0' scrolling='no' src='https://circuits.io/circuits/3963655-tronic/embed#breadboard' width='650'></iframe>
+### [Electronic circuit diagram](https://circuits.io/circuits/3963655-tronic)
+![TRONICic Drums schematic](/schematics/tronic-schematic.png)
+Format: ![Alt Text](url)
 
 ----- 
 
