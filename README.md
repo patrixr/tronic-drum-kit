@@ -1,7 +1,6 @@
-# tronic-drum-kit 
+# Tronic-drum-kit 
 
------ 
-
+-----  
 ## About 
 This project is fro Electronic Museum 3 at Clear Water Bay Film Studios Hong Kong 2017. 
 
@@ -25,3 +24,10 @@ _IDEs_
 1. [Arduino](https://www.arduino.cc/en/Main/Software)
 1. [Visual Studio](http://playground.arduino.cc/Code/VisualStudio)
 1. [Eclipse](http://playground.arduino.cc/Code/Eclipse)
+
+-----
+
+## Result
+
+<img src="https://raw.githubusercontent.com/zipatrick/tronic-drum-kit/master/medias/2017-02-11-event.png" width="300"> 
+<img src="https://raw.githubusercontent.com/zipatrick/tronic-drum-kit/master/medias/demo.gif" width="400"> 
